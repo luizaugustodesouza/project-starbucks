@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="flex flex-col items-center justify-center">
-      <div class="bg-green-900 w-full h-3"></div>
+      <div class="bg-[#106E32] w-full h-3"></div>
       <div class="container flex justify-between items-center p-3">
         <div class="w-16 h-16">
           <img src="/assets/images/logo.png" alt="" />
@@ -20,7 +20,7 @@
         <div class="flex items-center">
           <div class="border border-gray-500 px-3 py-1">
             <input
-              class="text-sm placeholder:text-lg placeholder:text-gray-500 outline-none"
+              class="text-sm text-gray-500 placeholder:text-lg placeholder:text-gray-500 outline-none"
               type="text"
               name="search"
               placeholder="Search"
@@ -34,27 +34,29 @@
       </div>
     </header>
     <section
-      class="container mx-auto bg-[url('/assets/images/bg.jpg')] bg-right bg-cover w-full h-[83vh]"
+      class="bg-[url('/assets/images/bg.jpg')] bg-right bg-cover w-full h-[83vh]"
     >
-      <div class="w-full h-full mt-16 p-10">
-        <h1 class="text-5xl font-bold block">Starbucks® Happy Hour</h1>
+      <div class="container mx-auto w-full h-full mt-16 p-10">
+        <h1 class="text-4xl font-bold block md:text-5xl">
+          Starbucks® Happy Hour
+        </h1>
         <span
           class="mt-5 inline-block font-semibold bg-black/65 text-white rounded-md text-lg"
           >We’ll meet you in your inbox. Drink deals are on their way.</span
         >
         <div class="flex flex-wrap mt-16">
           <img
-            class="w-40 h-40 mr-3 rounded-full border-4 border-green-900"
+            class="w-40 h-40 mr-3 rounded-full border-4 border-[#106E32] lg:hover:-translate-y-8 transition-all duration-200 ease-linear cursor-pointer"
             src="/assets/images/c1.jpg"
             alt=""
           />
           <img
-            class="w-40 h-40 rounded-full border-4 border-green-900"
+            class="w-40 h-40 rounded-full border-4 border-[#106E32] lg:hover:-translate-y-8 transition-all duration-200 ease-linear cursor-pointer"
             src="/assets/images/c2.jpg"
             alt=""
           />
           <img
-            class="w-40 h-40 mt-2 rounded-full border-4 border-green-900 sm:ml-3 sm:mt-0"
+            class="w-40 h-40 mt-2 rounded-full border-4 border-[#106E32] sm:ml-3 sm:mt-0 lg:hover:-translate-y-8 transition-all duration-200 ease-linear cursor-pointer"
             src="/assets/images/c3.jpg"
             alt=""
           />
@@ -63,7 +65,7 @@
     </section>
     <section class="grid grid-cols-1 justify-items-center md:grid-cols-2">
       <div class="w-60 bg-white pb-6">
-        <div class="h-3 bg-green-900 w-full"></div>
+        <div class="h-3 bg-[#106E32] w-full"></div>
         <div>
           <h3 class="text-3xl font-bold">Four Drinks, A Million Reasons</h3>
           <span class="block mt-4 text-lg"
@@ -87,12 +89,12 @@
         class="bg-[url('/assets/images/f1.jpg')] bg-cover bg-left h-full w-full md:row-span-3"
       ></div>
       <div
-        class="bg-[url('/assets/images/f2.jpg')] bg-cover bg-center h-96 w-full"
+        class="bg-[url('/assets/images/f2.jpg')] bg-contain bg-no-repeat bg-center sm:bg-cover h-96 w-full"
       ></div>
     </section>
     <section class="grid grid-cols-1 justify-items-center md:grid-cols-2">
       <div class="w-60 bg-white pb-6">
-        <div class="h-3 bg-green-900 w-full"></div>
+        <div class="h-3 bg-[#106E32] w-full"></div>
         <div>
           <h3 class="text-3xl font-bold">
             Introducing Vanilla Sweet Cream Cold Brew—Sweet, Creamy, Cold, Bold.
@@ -116,11 +118,13 @@
         class="bg-[url('/assets/images/f4.jpg')] bg-cover bg-center h-96 w-full"
       ></div>
     </section>
-    <section class="grid grid-cols-1 justify-items-center md:grid-cols-2">
+    <section
+      class="grid grid-cols-1 md:bg-[url('/assets/images/bg2.jpg')] bg-cover bg-left justify-items-center md:grid-cols-2"
+    >
       <div
-        class="w-60 pb-6 bg-[url('/assets/images/bg2.jpg')] bg-cover bg-left md:w-full md:px-28"
+        class="w-60 pb-6 bg-[url('/assets/images/bg2.jpg')] md:bg-none bg-cover bg-left"
       >
-        <div class="h-3 bg-green-900 w-full"></div>
+        <div class="h-3 bg-[#106E32] w-full"></div>
         <div>
           <h3 class="text-3xl font-bold">
             The New Ultra Caramel Frappuccino Is Here!
@@ -143,7 +147,7 @@
     </section>
     <section class="grid grid-cols-1 justify-items-center md:grid-cols-2">
       <div class="w-60 pb-6 bg-white bg-cover bg-left">
-        <div class="h-3 bg-green-900 w-full"></div>
+        <div class="h-3 bg-[#106E32] w-full"></div>
         <div>
           <h3 class="text-3xl font-bold">Kindness Starts With A Cup</h3>
           <p class="mt-5 text-xl">
@@ -167,12 +171,15 @@
       ></div>
     </section>
     <footer
-      class="p-16 bg-green-900 text-white font-semibold flex flex-col items-center"
+      class="p-16 bg-[#1e3932] bg-cover bg-center text-white font-semibold flex flex-col items-center relative"
     >
+      <div class="absolute -top-8">
+        <img class="w-16 h-16" src="/assets/images/logo.png" alt="" />
+      </div>
       <div>
         @ 2024
         <a
-          class="hover:text-gray-500 transition-all duration-200 ease-linear"
+          class="hover:text-[#106E32] transition-all duration-200 ease-linear"
           href="https://github.com/luizaugustodesouza"
           target="_blank"
         >
